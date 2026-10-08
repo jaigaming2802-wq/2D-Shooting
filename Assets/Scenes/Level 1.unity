@@ -2774,7 +2774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6dd01614b67ee2478ca7bb6a0e35677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMotor
-  moveSpeed: 5
+  moveSpeed: 5.5
   jumpForce: 12
   maxJumps: 2
   groundCheck: {fileID: 118894325}
