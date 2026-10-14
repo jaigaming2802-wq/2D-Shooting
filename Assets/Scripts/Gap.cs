@@ -6,8 +6,8 @@ public class Gap : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerHealth health =
-                collision.gameObject.GetComponent<PlayerHealth>();
+            PlayerHealth health = collision.gameObject.GetComponent<PlayerHealth>();
+
 
             if (health != null)
             {

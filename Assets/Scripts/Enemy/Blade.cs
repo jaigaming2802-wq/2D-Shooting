@@ -36,8 +36,8 @@ public class Blade : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerHealth health =
-                collision.GetComponent<PlayerHealth>();
+            PlayerHealth health = collision.GetComponent<PlayerHealth>();
+
 
             if (health != null)
             {

@@ -7,8 +7,6 @@ public class Checkpoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             CheckpointManager.Instance.SetCheckpoint(transform);
-
-            
         }
     }
 }
