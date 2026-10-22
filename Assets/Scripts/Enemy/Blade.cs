@@ -15,20 +15,11 @@ public class Blade : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            target.position,
-            moveSpeed * Time.deltaTime
-        );
+        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
-        if (Vector2.Distance(
-            transform.position,
-            target.position
-        ) < 0.01f)
+        if (Vector2.Distance(transform.position, target.position) < 0.01f)
         {
-            target = target == pointA
-                ? pointB
-                : pointA;
+            target = target == pointA ? pointB : pointA;
         }
     }
 

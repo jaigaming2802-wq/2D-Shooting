@@ -19,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
         firePointStartPos = firePoint.localPosition;
 
         projectiles = new GameObject[poolSize];
+
         for (int i = 0; i < poolSize; i++)
         {
             projectiles[i] = Instantiate(projectilePrefab);
@@ -54,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
 
                 if (spriteRenderer.flipX)
                 {
-                    projectile.SetDirection(-1);
+                    projectile.SetDirection(-1);    
                 }
 
                 else

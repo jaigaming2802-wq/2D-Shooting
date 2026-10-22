@@ -108,7 +108,7 @@ public class PlayerMotor : MonoBehaviour
         {
             bool onWallTop = Physics2D.OverlapCircle(groundCheck.position, groundRadius, wallLayer);
             if (onWallTop)
-                isGrounded = true;
+                isGrounded = true;      
         }
 
         if (isGrounded)
@@ -170,7 +170,7 @@ public class PlayerMotor : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
-
+        
     private void WallSlide()
     {
         isWallSliding = !isGrounded && isWall && rb.linearVelocity.y <= 0f;

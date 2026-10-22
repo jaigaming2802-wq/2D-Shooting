@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class DeathState : PlayerState
 {
-    public DeathState(
-        PlayerMotor player,
-        PlayerStateMachine stateMachine)
+    public DeathState(PlayerMotor player, PlayerStateMachine stateMachine)
         : base(player, stateMachine)
     {
     }

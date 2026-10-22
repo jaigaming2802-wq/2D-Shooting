@@ -64,13 +64,7 @@ public class PlayerHealth : MonoBehaviour
             player.Rigidbody.angularVelocity = 0f;
         }
 
-        player.StateMachine.ChangeState(
-            new DeathState(
-                player,
-                player.StateMachine
-            )
-        );
-
+        player.StateMachine.ChangeState(new DeathState(player, player.StateMachine));
         StartCoroutine(Respawn());
     }
 

@@ -3469,7 +3469,7 @@ MonoBehaviour:
   wallCheckDistance: 0.1
   wallSlideSpeed: 2
   wallJumpForceX: 8
-  wallJumpForceY: 12
+  wallJumpForceY: 10
   wallJumpLockTime: 0.9
   isGrounded: 0
   isLeftWall: 0
